@@ -32,7 +32,7 @@ Download dataset first, then run the [preprocess_node_data.py](Tools/preprocess_
 
 ### Ablation Study experiment:
 
-You could run the command (but you should reset some parameters im the [train_AS.py](train_AS.py) to change the rate of two modules)：
+You could run the command (if you are interesting in our work, you could also reset some parameters im the [train_AS.py](train_AS.py) to change the rate of two modules for more ablation study experiment)：
 
     python train_AS.py --seed 42 --cuda 0 --runs 10 --dataset cora --epoch 2000 --k 1 --nheads 1 --dim 32 --hidden_dim 128 --nlayer 1 --tran_dropout 0.7 --feat_dropout 0.5 --prop_dropout 0.6 --lr 0.01 --weight_decay 5e-4 --norm 'none' --patience 300 --num_layers 2 --num_freq 16 --Omega 45.0 --delta_min 0.25 --weight_penalty 1e-4
 
