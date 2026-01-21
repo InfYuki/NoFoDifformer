@@ -60,7 +60,7 @@ You could run the command (if you are interesting in our work, you could also re
 * The implementations of others are taken from the Pytorch Geometric library
 
 # Acknowledgements
-The code and filter learning code are implemented based on [GrokFormer: Graph Fourier Kolmogorov-Arnold Transformer](https://github.com/GGA23/GrokFormer/tree/main).
+The code and filter learning code are implemented based on [GrokFormer: Graph Fourier Kolmogorov-Arnold Transformer](https://github.com/GGA23/GrokFormer/tree/main). We gratefully acknowledge the authors of GrokFormer for their helpful guidance on experimental reproduction and parameter configuration.
 
 
 # 📖 Citation
