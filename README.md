@@ -18,7 +18,7 @@ This implementation is based on Python3. To run the code, you need the following
 - pandas==2.3.1
 - googledrivedownloader==1.1.0
 
-Detailed environment configuration is in the ![file](environment.yml) file.
+Detailed environment configuration is in the [file](environment.yml) file.
 
 
 ## Configuration - 配置（配置信息。）
