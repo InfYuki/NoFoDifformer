@@ -21,13 +21,28 @@ This implementation is based on Python3. To run the code, you need the following
 Detailed environment configuration is in the [environment.yml](environment.yml) file.
 
 ## Usage
+All commands and parameters are in the [run.sh](run.sh) 
 
-### Run node classification experiment:
+### Prepare data
+Download dataset first, then run the [preprocess_node_data.py](Tools/preprocess_node_data.py) to get (dataset).pt for trainning.
+
+### Run node classification experiment (train model):
 
     python train.py --seed 42 --cuda 0 --runs 10 --dataset pubmed --epoch 2000 --k 3 --nheads 2 --dim 16 --hidden_dim 128 --nlayer 3 --tran_dropout 0.4 --feat_dropout 0.3 --prop_dropout 0.0 --lr 0.01 --weight_decay 5e-4 --norm 'none' --patience 300 --num_layers 1 --num_freq 8 --Omega 50.0 --delta_min 0.25 --weight_penalty 1e-4
 
+### Ablation Study experiment:
 
-All instructions and parameters are in the [run.sh](run.sh) 
+You could run the command (but you should reset some parameters im the [train_AS.py](train_AS.py) to change the rate of two modules)：
+
+    python train_AS.py --seed 42 --cuda 0 --runs 10 --dataset cora --epoch 2000 --k 1 --nheads 1 --dim 32 --hidden_dim 128 --nlayer 1 --tran_dropout 0.7 --feat_dropout 0.5 --prop_dropout 0.6 --lr 0.01 --weight_decay 5e-4 --norm 'none' --patience 300 --num_layers 2 --num_freq 16 --Omega 45.0 --delta_min 0.25 --weight_penalty 1e-4
+
+### Visualization of Filter Responses:
+
+    python train_vis.py --seed 42 --cuda 0 --runs 2 --dataset pubmed --epoch 2000 --k 3 --nheads 2 --dim 16 --hidden_dim 128 --nlayer 3 --tran_dropout 0.4 --feat_dropout 0.3 --prop_dropout 0.0 --lr 0.01 --weight_decay 5e-4 --norm 'none' --patience 300 --num_layers 1 --num_freq 8 --Omega 50.0 --delta_min 0.25 --weight_penalty 1e-4
+
+        
+
+
 
 ## Development - 开发（关于怎样开发的文档信息。（API 等。））
 
