@@ -2,7 +2,7 @@
 
 ### NoFoDifformer: A Graph Transformer Integrating Nonharmonic Fourier Filtering and Differential Attention
 
-![image](M_2_4.jpg)
+![image](M_2_4_5.jpg)
 
 
 ## Summary - 概要
