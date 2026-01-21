@@ -7,13 +7,18 @@
 ## Environment Settings
 This implementation is based on Python3. To run the code, you need the following dependencies:
 
-torch==1.8.1
-torch-geometric==1.7.2
-scipy==1.2.1
-numpy==1.19.5
-tqdm==4.59.0
-seaborn==0.11.2
-scikit-learn==0.24.2
+- torch==1.8.1+cu111
+- torch-geometric==1.7.2
+- scipy==1.13.1
+- numpy==1.23.0
+- tqdm==4.59.0
+- seaborn==0.11.2
+- scikit-learn==0.24.2
+- dgl==0.6.1
+- pandas==2.3.1
+- googledrivedownloader==1.1.0
+
+Detailed environment configuration is in the ![file](environment.yml) file.
 
 
 ## Configuration - 配置（配置信息。）
