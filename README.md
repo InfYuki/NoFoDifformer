@@ -30,6 +30,9 @@ Download dataset first, then run the [preprocess_node_data.py](Tools/preprocess_
 
     python train.py --seed 42 --cuda 0 --runs 10 --dataset pubmed --epoch 2000 --k 3 --nheads 2 --dim 16 --hidden_dim 128 --nlayer 3 --tran_dropout 0.4 --feat_dropout 0.3 --prop_dropout 0.0 --lr 0.01 --weight_decay 5e-4 --norm 'none' --patience 300 --num_layers 1 --num_freq 8 --Omega 50.0 --delta_min 0.25 --weight_penalty 1e-4
 
+## Result:
+![image](res.png)
+
 ## Ablation Study experiment:
 
 You could run the command (if you are interesting in our work, you could also reset some parameters im the [train_AS.py](train_AS.py) to change the rate of two modules for more ablation study experiment)：
