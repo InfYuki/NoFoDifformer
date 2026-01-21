@@ -41,10 +41,24 @@ You could run the command (if you are interesting in our work, you could also re
     python train_vis.py --seed 42 --cuda 0 --runs 2 --dataset pubmed --epoch 2000 --k 3 --nheads 2 --dim 16 --hidden_dim 128 --nlayer 3 --tran_dropout 0.4 --feat_dropout 0.3 --prop_dropout 0.0 --lr 0.01 --weight_decay 5e-4 --norm 'none' --patience 300 --num_layers 1 --num_freq 8 --Omega 50.0 --delta_min 0.25 --weight_penalty 1e-4
 
         
+# Baselines links
+* [H2GCN](https://github.com/GitEventhandler/H2GCN-PyTorch)
+* [HopGNN](https://github.com/JC-202/HopGNN)
+* [GPRGNN](https://github.com/jianhao2016/GPRGNN)
+* [BernNet](https://github.com/ivam-he/BernNet)
+* [JacobiConv](https://github.com/GraphPKU/JacobiConv)
+* [HiGCN](https://github.com/Yiminghh/HiGCN)
+* [NodeFormer](https://github.com/qitianwu/NodeFormer)
+* [SGFormer](https://github.com/qitianwu/SGFormer)
+* [NAGphormer](https://github.com/JHL-HUST/NAGphormer)
+* [PolyFormer](https://github.com/air029/PolyFormer)
+* [Specformer](https://github.com/DSL-Lab/Specformer)
+* [GrokFormer](https://github.com/GGA23/GrokFormer/tree/main)
+* The implementations of others are taken from the Pytorch Geometric library
 
+# Acknowledgements
+The code and filter learning code are implemented based on [GrokFormer: Graph Fourier Kolmogorov-Arnold Transformer](https://github.com/GGA23/GrokFormer/tree/main).
 
-
-## Development - 开发（关于怎样开发的文档信息。（API 等。））
 
 ## Changelog - 更新日志（一个简短的历史记录（更改，替换或者其他）。）
 
