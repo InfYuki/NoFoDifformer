@@ -4,12 +4,17 @@
 
 ![image](M_2_4_5.jpg)
 
+## Environment Settings
+This implementation is based on Python3. To run the code, you need the following dependencies:
 
-## Summary - 概要
+torch==1.8.1
+torch-geometric==1.7.2
+scipy==1.2.1
+numpy==1.19.5
+tqdm==4.59.0
+seaborn==0.11.2
+scikit-learn==0.24.2
 
-## Features - 特性
-
-## Requirements - 必要条件（环境，对所有项目，和所有子模块和库的描述。）
 
 ## Configuration - 配置（配置信息。）
 
