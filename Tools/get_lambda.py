@@ -6,7 +6,7 @@ import numpy as np
 from preprocess_node_data import load_data, eigen_decompositon
 
 def load_eigs_from_cached(dataset):
-    pt_path = os.path.join("data", f"{dataset}.pt")
+    pt_path = os.path.join("../data", f"{dataset}.pt")
     if os.path.exists(pt_path):
         e, _, _, _ = torch.load(pt_path, map_location="cpu")
         return e.cpu().numpy()

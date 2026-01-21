@@ -1,28 +1,14 @@
 import time
-import yaml
-import copy
-import math
 import random
 import argparse
 import numpy as np
 import torch
-import torch.nn as nn
 import torch.nn.functional as F
 import torchmetrics
-from sklearn.metrics import roc_auc_score, mean_absolute_error, accuracy_score, r2_score
 
-from model import NoFoDifformer
-from model_org import NoFoDifformer_org
-from model_withDiffAttn import NoFoDifformer_Diff
-from model_mk import NoFoDifformer_mk
-from model_CL import NoFoDifformer_CL
-from model_kan import NoFoDifformer_MultiLayerKAN
-from model_DTGFKAN import NoFoDifformer_KAN
-from model_temp import NoFoDifformer_temp
-from model_AS import NoFoDifformer_AS
-from model_AS_NA import NoFoDifformer_AS_NA
+from Models.model_AS_NA import NoFoDifformer_AS_NA
 
-from utils import count_parameters, init_params, seed_everything, get_split
+from utils import init_params, seed_everything, get_split
 from tqdm import tqdm
 import scipy.stats  # 添加这一行导入
 

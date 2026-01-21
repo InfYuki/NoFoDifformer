@@ -1,9 +1,8 @@
 import pandas as pd
 import numpy as np
 import torch
-from tqdm import tqdm
-from utils import seed_everything, get_split, init_params
-from model_DTGFKAN import NoFoDifformer
+from utils import seed_everything, init_params
+from Models.model_DTGFKAN import NoFoDifformer
 
 def extract_learnable_frequencies(model):
     """
